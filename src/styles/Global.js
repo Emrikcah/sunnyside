@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
 
 :root{
    --Soft-red: hsl(7, 99%, 70%);
@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body{
-    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Barlow', sans-serif; */
     font-size: 18px ;
     background-color: var(--Dark-blue) ;
 }
