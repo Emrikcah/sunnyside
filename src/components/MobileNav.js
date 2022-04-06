@@ -29,10 +29,9 @@ const [toggleMenu, setToggleMenu] = useState(false);
                <li>
                   <a href="/">projects</a>
                </li>
-               <li>
-                  <a href="/">contact</a>
-               </li>
+               
             </ul>
+            <button>contact</button>
          </div>
         )}
       </StyledMobileNav>

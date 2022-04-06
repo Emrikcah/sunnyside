@@ -17,6 +17,7 @@ const Header = () => {
 };
 
 const StyledHeader = styled.header`
+min-height:calc(538px - 89px) ;
    div {
       display: flex;
       align-items: center;

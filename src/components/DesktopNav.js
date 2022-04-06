@@ -18,10 +18,8 @@ const DesktopNav = () => {
             <li>
                <a href="/">projects</a>
             </li>
-            <li>
-               <a href="/">contact</a>
-            </li>
          </ul>
+           <button>contact</button>
       </StyledDesktopNav>
    );
 };

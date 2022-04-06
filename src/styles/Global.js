@@ -25,9 +25,9 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body{
-    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Barlow', sans-serif;
     font-size: 18px ;
-    background-color: var(--Dark-blue) ;
+    
 }
 
 ul{
@@ -48,6 +48,7 @@ p{
 
 img{
    max-width:100% ;
+   display: block;
 }
 
 `;

@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import GlobalStyles from "./styles/Global";
 import images from './constants/images'
+import Transform from "./components/Transform";
+import Graphic from "./components/Graphic";
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
             <StyledShowcase>
                <Navbar />
                <Header />
+               <Transform/>
+               <Graphic/>
             </StyledShowcase>
         
       </>
