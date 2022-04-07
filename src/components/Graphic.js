@@ -53,8 +53,8 @@ const StyledGraphic = styled.section`
       letter-spacing: -0.2px;
       margin-bottom: 1.5rem;
    }
-   p{
-   font-size: 1rem;
+   p {
+      font-size: 1rem;
    }
 `;
 
