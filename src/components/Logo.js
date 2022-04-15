@@ -6,7 +6,7 @@ import images from '../constants/images'
 const Logo = () => {
    return (
       <StyledLogo>
-         <img src={images.logo} alt="" />
+         <img className="color" src={images.logo} alt="" />
       </StyledLogo>
    );
 };
@@ -14,6 +14,7 @@ const Logo = () => {
 const StyledLogo = styled.div`
    img {
       height: 24px ;
+      
    }
 `;
 

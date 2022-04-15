@@ -30,6 +30,7 @@ import jennie from "../assets/people/image-jennie.jpg";
 import thomas from "../assets/people/image-thomas.jpg";
 
 import logo from "../assets/logo.svg";
+import logoFooter from "../assets/logo-footer.svg";
 
 export default {
    dCone,
@@ -60,4 +61,5 @@ export default {
    jennie,
    thomas,
    logo,
+   logoFooter
 };
