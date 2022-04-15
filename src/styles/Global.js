@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
    --Dark-grayish-blue: hsl(232, 10%, 55%);
    --Grayish-blue: hsl(210, 4%, 67%);
    --White: hsl(0, 0%, 100%);
-   --OffWhite: hsl(0, 0%, 98%);
+   --OffWhite: hsl(0, 0%, 97%);
    }
 
 *{

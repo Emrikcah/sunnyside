@@ -6,6 +6,7 @@ import images from "./constants/images";
 import Transform from "./components/Transform";
 import Graphic from "./components/Graphic";
 import Testimonials from "./components/Testimonials";
+import Gallery from "./components/Gallery";
 
 function App() {
    return (
@@ -14,10 +15,11 @@ function App() {
          <StyledShowcase>
             <Navbar />
             <Header />
-            <Transform />
-            <Graphic />
-            <Testimonials/>
          </StyledShowcase>
+         <Transform />
+         <Graphic />
+         <Testimonials />
+         <Gallery />
       </>
    );
 }

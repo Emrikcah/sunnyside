@@ -62,23 +62,27 @@ const StyledSection = styled.section`
       font-weight: 900;
       letter-spacing: 0.222rem;
       text-transform: uppercase;
+      margin-bottom: 60px;
    }
    article {
+      margin-bottom: 60px;
    }
 
    img {
       border-radius: 50%;
       width: 72px;
-      margin: 0 auto;
+      margin: 0 auto 30px;
    }
 
-   p {
+   p:first-of-type {
       letter-spacing: -0.13px;
+      margin-bottom: 30px;
    }
 
    h4 {
       font-weight: 900;
       letter-spacing: -0.13px;
+      margin-bottom: 10px;
    }
 
    p:nth-of-type(2) {
