@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import Logo from "./Logo";
+import styled from "styled-components";
+import {StyledBtn} from '../styles/Button.styled'
 
 const DesktopNav = () => {
    return (
@@ -18,8 +19,8 @@ const DesktopNav = () => {
             <li>
                <a href="/">projects</a>
             </li>
+           <StyledBtn bgClr={'var(--White)'}>contact</StyledBtn>
          </ul>
-           <button>contact</button>
       </StyledDesktopNav>
    );
 };
@@ -29,6 +30,10 @@ const StyledDesktopNav = styled.div`
    li {
       display: inline-block;
       padding: 0px 20px ;
+   }
+
+   a{
+      color: var(--White);
    }
 
    @media (min-width: 768px) {

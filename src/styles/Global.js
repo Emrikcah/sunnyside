@@ -36,11 +36,14 @@ ul{
    list-style: none ;
 }
 
-a{
-   text-decoration: none ;
-}
 
-h1,h2,h3,h4,h5,h6{
+a {
+      text-transform: capitalize;
+      cursor: pointer;
+      text-decoration: none ;
+   }
+
+h1,h2,h3,h4,h5,h6,button{
    font-family: 'Fraunces', serif;
 }
 

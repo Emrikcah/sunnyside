@@ -34,6 +34,8 @@ const StyledShowcase = styled.div`
 
    @media (min-width: 768px) {
       background: url(${images.dHeader});
+      background-size: cover;
+      height: 800px;
    }
 `;
 

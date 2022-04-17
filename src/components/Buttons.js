@@ -7,8 +7,11 @@ const Buttons = ({className,children}) => {
   )
 }
 
-const StyledBtn = styled(Buttons)`
-
+export const StyledBtn = styled.button`
+width: 200px;
+height: 50px;
+background-color: ${(props) =>props.bg};
+color: ${(props) => props.color};
    
 
 `

@@ -17,7 +17,7 @@ const Header = () => {
 };
 
 const StyledHeader = styled.header`
-min-height:calc(538px - 89px) ;
+   min-height: calc(538px - 89px);
    div {
       display: flex;
       align-items: center;
@@ -27,13 +27,21 @@ min-height:calc(538px - 89px) ;
 
    h1 {
       margin-top: 60px;
-      margin-bottom: 40px ;
+      margin-bottom: 40px;
       text-transform: uppercase;
       color: var(--White);
       font-weight: 900;
       text-align: center;
       font-size: 2.5rem;
       letter-spacing: 10px;
+   }
+
+   @media (min-width: 768px) {
+      h1{
+         margin-top: 100px;
+         margin-bottom: 96px;
+         font-size: 3.5rem;
+      }
    }
 `;
 
