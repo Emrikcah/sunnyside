@@ -8,20 +8,23 @@ import Graphic from "./components/Graphic";
 import Testimonials from "./components/Testimonials";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import { Container } from "./styles/Container.styled";
 
 function App() {
    return (
       <>
          <GlobalStyles />
-         <StyledShowcase>
-            <Navbar />
-            <Header />
-         </StyledShowcase>
-         <Transform />
-         <Graphic />
-         <Testimonials />
-         <Gallery />
-         <Footer/>
+         <Container>
+            <StyledShowcase>
+               <Navbar />
+               <Header />
+            </StyledShowcase>
+            <Transform />
+            <Graphic />
+            <Testimonials />
+            <Gallery />
+            <Footer />
+         </Container>
       </>
    );
 }
@@ -40,3 +43,5 @@ const StyledShowcase = styled.div`
 `;
 
 export default App;
+
+//continue checking container for all the sections

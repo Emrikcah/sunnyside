@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import images from "../constants/images";
-import { Container } from "../styles/Container.styled";
+
 
 const data = [
    {
@@ -32,17 +32,21 @@ const data = [
 
 const Testimonials = () => {
    return (
-      <StyledSection>
-         <h3>Client testimonials</h3>
-         {data.map(({ id, imgSrc, altText, text, name, jobTitle }) => (
-            <article key={id}>
-               <img src={imgSrc} alt={altText} />
-               <p>{text}</p>
-               <h4>{name}</h4>
-               <p>{jobTitle}</p>
-            </article>
-         ))}
-      </StyledSection>
+   
+         <StyledSection>
+            <h3>Client testimonials</h3>
+            <div>
+               {data.map(({ id, imgSrc, altText, text, name, jobTitle }) => (
+                  <article key={id}>
+                     <img src={imgSrc} alt={altText} />
+                     <p>{text}</p>
+                     <h4>{name}</h4>
+                     <p>{jobTitle}</p>
+                  </article>
+               ))}
+            </div>
+         </StyledSection>
+      
    );
 };
 
@@ -88,6 +92,30 @@ const StyledSection = styled.section`
    p:nth-of-type(2) {
       font-size: 0.875rem;
       letter-spacing: -0.1px;
+   }
+
+   @media (min-width: 768px) {
+      /* max-width: 1440px; */
+      padding: 140px;
+
+      h3 {
+         margin-bottom: 80px;
+      }
+
+      img {
+         margin-bottom: 50px;
+      }
+
+      div {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 50px;
+      }
+
+      p:first-of-type {
+         /* font-size: 0.872rem; */
+         margin-bottom: 80px;
+      }
    }
 `;
 

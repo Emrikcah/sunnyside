@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import styled from "styled-components";
-import {StyledBtn} from '../styles/Button.styled'
+import { StyledBtn } from "../styles/Button.styled";
 
 const DesktopNav = () => {
    return (
@@ -19,20 +19,21 @@ const DesktopNav = () => {
             <li>
                <a href="/">projects</a>
             </li>
-           <StyledBtn bgClr={'var(--White)'}>contact</StyledBtn>
+            <StyledBtn bgClr={"var(--White)"}>contact</StyledBtn>
          </ul>
       </StyledDesktopNav>
    );
 };
 
 const StyledDesktopNav = styled.div`
+   padding: 0 40px;
    display: none;
    li {
       display: inline-block;
-      padding: 0px 20px ;
+      padding: 0px 20px;
    }
 
-   a{
+   a {
       color: var(--White);
    }
 

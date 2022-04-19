@@ -27,7 +27,7 @@ const MobileNav = () => {
                      <a href="/">projects</a>
                   </li>
                </ul>
-               <StyledBtn bgClr="hsl(51, 100%, 49%)">contact</StyledBtn>
+               <StyledBtn bgClr={'var(--Yellow)'}>contact</StyledBtn>
             </div>
          )}
       </StyledMobileNav>
@@ -36,6 +36,7 @@ const MobileNav = () => {
 
 const StyledMobileNav = styled.div`
    position: relative;
+   padding: 0 40px;
 
    .nav-header {
       display: flex;

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import images from '../constants/images'
-
+import images from "../constants/images";
 
 const Logo = () => {
    return (
@@ -13,8 +12,11 @@ const Logo = () => {
 
 const StyledLogo = styled.div`
    img {
-      height: 24px ;
-      
+      height: 24px;
+
+      @media (min-width: 768px) {
+         height: 33px;
+      }
    }
 `;
 

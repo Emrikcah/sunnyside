@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../styles/Container.styled";
+
 
 import styled from "styled-components";
 import DesktopNav from "./DesktopNav";
@@ -7,13 +7,13 @@ import MobileNav from "./MobileNav";
 
 const Navbar = () => {
    return (
-      <StyledNavbar>
-         <Container>
+   
+         <StyledNavbar>
             <DesktopNav />
 
             <MobileNav />
-         </Container>
-      </StyledNavbar>
+         </StyledNavbar>
+      
    );
 };
 

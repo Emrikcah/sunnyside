@@ -3,40 +3,43 @@ import styled from "styled-components";
 import images from "../constants/images";
 import Buttons from "./Buttons";
 
+
 const Transform = () => {
    return (
       <StyledTransform>
          <div>
-            <picture>
+            <picture className="order-change">
                <source media="(min-width: 768px)" srcSet={images.dTrans} />
-               <img src={images.mTrans} alt="egg"/>
+               <img src={images.mTrans} alt="egg" />
             </picture>
+
+            <article>
+               <h2>Transform your brand</h2>
+               <p>
+                  We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that
+                  do most of the marketing for you.
+               </p>
+               {/* make the btn a component */}
+               <Buttons color="red" bb="blue">
+                  Learn more
+               </Buttons>
+            </article>
          </div>
-         <article>
-            <h2>Transform your brand</h2>
-            <p>
-               We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do
-               most of the marketing for you.
-            </p>
-            {/* make the btn a component */}
-            <Buttons color="red" bb="blue">
-               Learn more
-            </Buttons>
-         </article>
          <div>
             <picture>
                <source media="(min-width: 768px)" srcSet={images.dStand} />
-               <img src={images.mStand} alt="pink cup"/>
+               <img src={images.mStand} alt="pink cup" />
             </picture>
+
+            <article>
+               <h2>Stand out to the right audience</h2>
+               <p>
+                  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your
+                  brand in digital places.
+               </p>
+               <button>Learn more</button>
+            </article>
          </div>
-         <article>
-            <h2>Stand out to the right audience</h2>
-            <p>
-               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your
-               brand in digital places.
-            </p>
-            <button>Learn more</button>
-         </article>
       </StyledTransform>
    );
 };
@@ -55,6 +58,32 @@ const StyledTransform = styled.section`
          font-weight: 600;
          color: var(--Dark-grayish-blue);
          margin-bottom: 25px;
+      }
+   }
+
+   @media (min-width: 768px) {
+      div {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+      }
+
+      .order-change {
+         order: 2;
+      }
+
+      article {
+         align-self: center;
+         text-align: left;
+         padding: 120px;
+         /* max-width: 445px; */
+
+         h2 {
+            font-size: 2.5rem;
+         }
+
+         p {
+            letter-spacing: -0.13px;
+         }
       }
    }
 `;

@@ -51,6 +51,7 @@ const StyledSection = styled.section`
    }
 
    @media (min-width: 768px) {
+      grid-template-columns: repeat(4,1fr);
       .sm{
          display: none;
       }
