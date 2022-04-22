@@ -16,6 +16,7 @@ const MobileNav = () => {
 
          {toggleMenu && (
             <div className="links-container">
+               <div className="triangle"></div>
                <ul className="links">
                   <li>
                      <a href="/">about</a>
@@ -54,6 +55,18 @@ const StyledMobileNav = styled.div`
       min-width: 329px;
       background-color: white;
    }
+   
+   .triangle {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 32px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 32px solid white;
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+}
 
    li,
    button {
