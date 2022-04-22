@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import styled from "styled-components";
-import { StyledBtn } from "../styles/Button.styled";
+import { StyledBtnNav } from "../styles/Button.styled";
 
 const DesktopNav = () => {
    return (
@@ -19,7 +19,9 @@ const DesktopNav = () => {
             <li>
                <a href="/">projects</a>
             </li>
-            <StyledBtn bgClr={"var(--White)"}>contact</StyledBtn>
+            <StyledBtnNav bgClr={"var(--White)"} hbgClr={"var(--Hover-blue)"} clr={"var(--White)"}>
+               contact
+            </StyledBtnNav>
          </ul>
       </StyledDesktopNav>
    );

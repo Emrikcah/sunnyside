@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import images from "../constants/images";
-import Buttons from "./Buttons";
+
+import LearnMore from './LearnMore'
 
 
 const Transform = () => {
@@ -19,10 +20,8 @@ const Transform = () => {
                   We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that
                   do most of the marketing for you.
                </p>
-               {/* make the btn a component */}
-               <Buttons color="red" bb="blue">
-                  Learn more
-               </Buttons>
+              
+             <LearnMore bg={"var(--Yellow)"}/>
             </article>
          </div>
          <div>
@@ -37,7 +36,7 @@ const Transform = () => {
                   Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your
                   brand in digital places.
                </p>
-               <button>Learn more</button>
+               <LearnMore bg={"var(--Soft-red)"}/>
             </article>
          </div>
       </StyledTransform>

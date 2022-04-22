@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
    --light-cyan: hsl(167, 34%, 41%,1);
    --Dark-blue: hsl(198, 62%, 26%);
    --Dark-moderate-cyan: hsl(168, 44%, 70%,1);
+   --Hover-blue: hsl(199, 86%, 71%);
 
    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
    --Very-dark-grayish-blue: hsl(213, 9%, 39%);

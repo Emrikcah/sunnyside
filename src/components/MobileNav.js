@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 import MenuButton from "./MenuButton";
-import { StyledBtn } from "../styles/Button.styled";
+import { StyledBtnNav } from "../styles/Button.styled";
 
 const MobileNav = () => {
    const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,7 +27,7 @@ const MobileNav = () => {
                      <a href="/">projects</a>
                   </li>
                </ul>
-               <StyledBtn bgClr={'var(--Yellow)'}>contact</StyledBtn>
+               <StyledBtnNav bgClr={"var(--Yellow)"}>contact</StyledBtnNav>
             </div>
          )}
       </StyledMobileNav>
@@ -36,7 +36,7 @@ const MobileNav = () => {
 
 const StyledMobileNav = styled.div`
    position: relative;
-   padding: 0 40px;
+   padding: 0 25px;
 
    .nav-header {
       display: flex;
@@ -46,11 +46,12 @@ const StyledMobileNav = styled.div`
    .links-container {
       position: absolute;
       top: 50px;
+      right: 22px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      width: 100%;
+      min-width: 329px;
       background-color: white;
    }
 
