@@ -1,6 +1,6 @@
-# Frontend Mentor - Sunnyside agency landing page
+# Frontend Mentor - Sunnyside agency landing page using react and styled-components
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Sunnyside agency landing page coding challenge](./public/images/desktop-preview.jpg)
 
 ## Welcome! 👋
 
